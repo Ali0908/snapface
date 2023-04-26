@@ -1,4 +1,4 @@
-<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Oops, unSnap!' }">
+<div class="face-snap-card" *ngIf="faceSnap$| async as faceSnap" [ngClass]="{ snapped: buttonText === 'Oops, unSnap!' }">
     <!-- <p> {{ 456321.25 | number: '1.0-0' }}</p>
     <p> {{ 0.336 | percent: '1.0-1' }}</p>
     <p> {{ 344.36 | currency: 'EUR' : 'code' }}</p> -->
